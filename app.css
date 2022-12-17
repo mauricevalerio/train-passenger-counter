@@ -111,7 +111,7 @@ button:active {
 
 @media (max-width: 640px) {
 	#count-container {
-		padding: 0;
+		padding: 5px 5px;
 		max-width: 500px;
 	}
 
@@ -121,7 +121,10 @@ button:active {
 	}
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
+	#count-container {
+		width: 100%;
+	}
 
 	#date-list,
 	#count-list {
