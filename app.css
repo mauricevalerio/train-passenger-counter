@@ -8,8 +8,10 @@
 body {
 	background-image: url("imgs/unsplash-train-station.jpg");
 	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 	font-family: 'Roboto', sans-serif;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 }
@@ -86,16 +88,24 @@ button:active {
 	text-align: center;
 }
 
+#date-list:before {
+	content: "DATE"
+}
+
+#count-list:before {
+	content: "COUNT"
+}
+
 #date-list p,
 #count-list p {
 	margin-bottom: 5px;
 }
 
-.small-message {
+.error-message {
 	color: red;
 }
 
-
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
 	#btn-container {
 		flex-direction: column;
